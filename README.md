@@ -80,9 +80,9 @@ Everet(config-if) #
 
 
 ## To check protocol configuration and routing information on a Cisco device, you can use the following commands:
-1.	## show Ip route: This command displays the routing table of the device, showing how the router is forwarding packets for different networks. It includes information about directly connected networks and routes learned through routing protocols such as OSPF, EIGRP, BGP, or static routes.
-2.	## show Ip protocols: This command shows the active routing protocols configured on the device, such as OSPF, EIGRP, or RIP. It provides information about timers, network statements, and other protocol-specific configurations.
-3.	## show Ip OSPF for OSPF configurations
+1.	### show Ip route: This command displays the routing table of the device, showing how the router is forwarding packets for different networks. It includes information about directly connected networks and routes learned through routing protocols such as OSPF, EIGRP, BGP, or static routes.
+2.	### show Ip protocols: This command shows the active routing protocols configured on the device, such as OSPF, EIGRP, or RIP. It provides information about timers, network statements, and other protocol-specific configurations.
+3.	### show Ip OSPF for OSPF configurations
 
    ![image](https://github.com/user-attachments/assets/0d98be7f-ed9f-4eed-a825-3b636bf98480)
 
