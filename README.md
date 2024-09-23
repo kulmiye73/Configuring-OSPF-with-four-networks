@@ -2,7 +2,7 @@
 
 ## Configuring OSPF with four networks (Open Shortest Path First) on a Cisco Router
 
- 		![image](https://github.com/user-attachments/assets/099aed43-964c-45a6-90f8-66b0b36110c3)
+![image](https://github.com/user-attachments/assets/099aed43-964c-45a6-90f8-66b0b36110c3)
 
 
 
