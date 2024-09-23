@@ -1,11 +1,12 @@
 
 
-# Configuring OSPF with four networks (Open Shortest Path First) on a Cisco Router
+## Configuring OSPF with four networks (Open Shortest Path First) on a Cisco Router
 
- 		![image](https://github.com/user-attachments/assets/ee6d97e9-fb9b-4b8a-ad06-b3a774c9774b)
+ 		![image](https://github.com/user-attachments/assets/099aed43-964c-45a6-90f8-66b0b36110c3)
 
 
-## I am configuring the Tacoma router to establish communication with the rest of the network.
+
+### I am configuring the Tacoma router to establish communication with the rest of the network.
 Tacoma>
 Tacoma>enable 
 Tacoma #conf t
@@ -20,7 +21,7 @@ Tacoma(config-if) #clock r
 Tacoma(config-if) #clock rate 56000
 Tacoma (config-if) #exit
 
-## I am configuring the Seattle router to establish communication with the rest of the network.
+### I am configuring the Seattle router to establish communication with the rest of the network.
 
 Seattle# Seattle>
 Seattle>
@@ -49,7 +50,7 @@ Seattle(config-if) #no shut
 %LINK-5-CHANGED: Interface Serial0/1/0, changed state to down
 Seattle(config-if) #exit
 
-## I am configuring the Everet router to establish communication with the rest of the network.
+### I am configuring the Everet router to establish communication with the rest of the network.
 
 Everet #conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -65,32 +66,32 @@ Everet(config-if) #
 
 
 
-# # I am currently pinging all devices to verify network connectivity and ensure proper communication between them.
+### I am currently pinging all devices to verify network connectivity and ensure proper communication between them.
 
 ![image](https://github.com/user-attachments/assets/ac65e113-a30f-4297-b8ee-0423722fac87)
 
  
-## Ping pc1 to pc3.
+### Ping pc1 to pc3.
 
  ![image](https://github.com/user-attachments/assets/46dee34a-fa7c-40de-8214-c5b451d763cc)
 
 
-# # The ping is unsuccessful because no routing protocols have been configured yet.
+### The ping is unsuccessful because no routing protocols have been configured yet.
 
 
 
-## To check protocol configuration and routing information on a Cisco device, you can use the following commands:
-1.	### show Ip route: This command displays the routing table of the device, showing how the router is forwarding packets for different networks. It includes information about directly connected networks and routes learned through routing protocols such as OSPF, EIGRP, BGP, or static routes.
-2.	### show Ip protocols: This command shows the active routing protocols configured on the device, such as OSPF, EIGRP, or RIP. It provides information about timers, network statements, and other protocol-specific configurations.
-3.	### show Ip OSPF for OSPF configurations
+### To check protocol configuration and routing information on a Cisco device, you can use the following commands:
+1.	#### show Ip route: This command displays the routing table of the device, showing how the router is forwarding packets for different networks. It includes information about directly connected networks and routes learned through routing protocols such as OSPF, EIGRP, BGP, or static routes.
+2.	#### show Ip protocols: This command shows the active routing protocols configured on the device, such as OSPF, EIGRP, or RIP. It provides information about timers, network statements, and other protocol-specific configurations.
+3.	#### show Ip OSPF for OSPF configurations
 
    ![image](https://github.com/user-attachments/assets/0d98be7f-ed9f-4eed-a825-3b636bf98480)
 
  
-## No Ip protocols and no Ip OSPF configuration
+### No Ip protocols and no Ip OSPF configuration
 
 
-## I am now starting to configure OSPF protocols on all the routers within the same area.
+##$ I am now starting to configure OSPF protocols on all the routers within the same area.
 
 
 
@@ -131,8 +132,8 @@ Everet(config-router) #
 
 
 
-## I am now able to check IP protocols and routing configurations to verify the OSPF protocol setup.
-## Go Seattle router and type show Ip protocols or Ip route
+### I am now able to check IP protocols and routing configurations to verify the OSPF protocol setup.
+### Go Seattle router and type show Ip protocols or Ip route
 Seattle>
 Seattle>enable
 Seattle show Ip protocols
@@ -183,16 +184,16 @@ L       192.168.2.1/32 is directly connected, Serial0/1/1
 
 
 
-## Let's ping PC1 from PC3 to verify their connectivity.
+### Let's ping PC1 from PC3 to verify their connectivity.
 
-## This emphasizes the action and direction of the ping for clarity.
+### This emphasizes the action and direction of the ping for clarity.
 
  ![image](https://github.com/user-attachments/assets/1c85ecb6-dada-428d-993f-fee82fd0e6bc)
 
 ![image](https://github.com/user-attachments/assets/5b3f74e2-0466-4093-9ac2-2fcb83d33ad5)
 
  
-## The ping test was successful, which means the OSPF project was completed successfully!"
+### The ping test was successful, which means the OSPF project was completed successfully!"
 
 
 
